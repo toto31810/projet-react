@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; 
+  }
+  
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .choice-page {
+    text-align: center;
+    color: #d50368;
+    font-size: 30px;
+  }
+  
+  .choice-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .choice-item {
+    margin-top: 30px;
+    width: calc(25% - 20px);
+    margin-bottom: 50px;
+    box-sizing: border-box;
+  }
+  
+  .choice-button {
+    width: 100%;
+    padding: 100px;
+    font-size: 30px;
+    background-color: #faf720;
+    color: #d50368;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .joke-page {
+    text-align: center;
+  }
+  
+  .joke-container {
+    background-color: #faf720; 
+    color: #d50368; 
+    padding: 80px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .joke-text {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .joke-button {
+    background-color: #d50368; 
+    color: #fff; 
+    border: none;
+    padding: 30px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+
+  .button-spacing {
+    margin-right: 100px; 
+  }
+  
