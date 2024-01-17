@@ -17,8 +17,13 @@ router.get("/categories", (req, res) => {
 });
 
 router.get("/joke", (req, res) => {
+	if(!req.query.category) {
+		return res.status(400).json({ error: "Missing category" });
+	}
 	const category = categories.indexOf(categories.find(c => req.query.category === c));
-	res.json(jokes.filter(j => j.category === category).slice(0, 1));
+	const jokesOfCategory = jokes.filter(j => j.category === category);
+	const randomJoke = jokesOfCategory[Math.floor(Math.random() * jokesOfCategory.length)];
+	res.json({ joke: randomJoke });
 });
 
 module.exports = router;
